@@ -1,0 +1,25 @@
+.header {
+  text-align: center;
+  font-size: 3.5em;
+  font-family: sans-serif;
+}
+
+.grid {
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  display: grid;
+  grid-template-columns: 10% 45% 45%;
+  grid-gap: 5px;
+  margin-top: 3em;
+}
+
+.grid_describe {
+  font-family: sans-serif;
+  background: lightgrey;
+}
+
+.normal {
+  font-family: sans-serif;
+  background: #dec0b6;
+}

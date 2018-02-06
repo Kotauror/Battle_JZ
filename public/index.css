@@ -1,0 +1,38 @@
+body {
+  background-image: url("https://pre00.deviantart.net/d7db/th/pre/i/2012/192/f/4/all_ash_pokemon_by_marvelmania-d56op5y.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2em;
+}
+
+h1 {
+  background: #c2696570;
+  font-family: sans-serif;
+  font-size: 2.7em;
+  text-align: center;
+  padding: 0.15em;
+}
+
+h2 {
+  background: #e09b79cf;
+  font-family: sans-serif;
+  padding-left: 1.5em;
+}
+
+form {
+  background: #f3e5e58a;
+  padding: 1.5em;
+}
+
+.playername {
+  height: 4em;
+  width: 20em;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+.submit-player {
+  height: 3.5em;
+  width: 7em;
+  font-size: 0.8em;
+}
