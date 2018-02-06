@@ -4,4 +4,12 @@ bundle (po wpisaniu gemow)
 require 'sinatra/base' in app.rb
 
 rackup - run config.ru file - creates server
-and the config.ru tells to run Battle. 
+and the config.ru tells to run Battle.
+
+You may notice the line 'run! if app_file == $0' in app.rb.  run! is a method that runs the program. app_file is the file you are in. And $0 is the command you type in the terminal (if you use rackup, then $0 == rackup, when using ruby app.rb, $0 will equal the app itself (app.rb).)
+
+ it essentially saying run this file when app_file equals the command you type in the terminal. So when you type 'ruby app.rb' - it will run.
+
+ However, if you have a config.ru file, and run 'rackup', you will notice that the file still runs. This is because this whole line is only needed if you are starting up your server using 'ruby app.rb'.
+
+ tl;dr - you don't need this line if you have a working config.ru file.
