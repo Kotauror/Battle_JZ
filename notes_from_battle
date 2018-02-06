@@ -1,0 +1,7 @@
+bundle init
+bundle (po wpisaniu gemow)
+
+require 'sinatra/base' in app.rb
+
+rackup - run config.ru file - creates server
+and the config.ru tells to run Battle. 
