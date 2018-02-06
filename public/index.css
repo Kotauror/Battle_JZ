@@ -36,3 +36,7 @@ form {
   width: 7em;
   font-size: 0.8em;
 }
+
+.submit-player:hover {
+  box-shadow: #c29d2f7a 0px 0px 30px;
+}
