@@ -1,21 +1,21 @@
 <div class="header" style="text-align: center; font-size: 3.5em; font-family: sans-serif;">
 <%= @player1 %> vs <%= @player2 %>
 </div>
-<div class="grid" style="text-align: center; width: 60%; margin-left: 20%; display: grid; grid-template-columns: 10% 45% 45%; background: #dec0b6; margin-top: 3em;">
+<div class="grid" style="text-align: center; width: 60%; margin-left: 20%; display: grid; grid-template-columns: 10% 45% 45%; grid-gap: 5px; margin-top: 3em;">
   <div class="grid_describe" style="font-family: sans-serif; background: lightgrey;"> Player name </div>
-  <div style="font-family: sans-serif;"> <%= @player1 %> </div>
-  <div style="font-family: sans-serif;"> <%= @player2 %> </div>
+  <div style="font-family: sans-serif; background: #dec0b6;"> <%= @player1 %> </div>
+  <div style="font-family: sans-serif; background: #dec0b6;"> <%= @player2 %> </div>
   <div class="grid_describe" style="font-family: sans-serif; background: lightgrey;"> HP </div>
-  <div class="player1-hp" style="font-family: sans-serif;">
+  <div class="player1-hp" style="font-family: sans-serif; background: #dec0b6;">
     100
   </div>
-  <div class="player2-hp" style="font-family: sans-serif;">
+  <div class="player2-hp" style="font-family: sans-serif; background: #dec0b6;">
     100
   </div>
   <div class="grid_describe" style="font-family: sans-serif; background: lightgrey;"> Actions </div>
-  <div>
+  <div style="background: #dec0b6;">
   </div>
-  <div>
+  <div style="background: #dec0b6;">
     <form action="/attack">
       <input type="submit" value="Attack!">
     </form>
