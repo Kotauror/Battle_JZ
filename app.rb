@@ -19,8 +19,14 @@ class Battle < Sinatra::Base
     @player2 = session[:players_names][1]
     erb(:player_names)
   end
-    # start the server if ruby file executed directly and it is - we call app.rb file in config.ru
+
+  get '/attack' do
+    @player1 = session[:players_names][0]
+    @player2 = session[:players_names][1]
+    erb(:attack)
+  end
+
 
   run! if app_file == $0 # not required when we have config.ru - config.ru runs the program when we use
-  
+
 end
