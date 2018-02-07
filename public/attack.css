@@ -33,3 +33,7 @@ form {
   width: 15em;
   font-size: 0.8em;
 }
+
+.gobackbutton:hover {
+  box-shadow: #ab9534d1 0px 0px 35px;
+}
