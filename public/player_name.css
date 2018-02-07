@@ -23,3 +23,18 @@
   font-family: sans-serif;
   background: #dec0b6;
 }
+
+.offensive {
+  background-color: #de1616 !important;
+  margin-top: 1em;
+}
+
+h1 {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 0.8em;
+  text-align: center;
+}

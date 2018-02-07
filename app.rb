@@ -3,7 +3,6 @@ class Battle < Sinatra::Base
   enable :sessions
 
   get '/' do
-    # 'Testing infrastructure works!'
     erb(:index)
   end
 
@@ -25,7 +24,6 @@ class Battle < Sinatra::Base
     @player2 = session[:players_names][1]
     erb(:attack)
   end
-
 
   run! if app_file == $0 # not required when we have config.ru - config.ru runs the program when we use
 

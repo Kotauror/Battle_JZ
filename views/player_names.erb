@@ -9,31 +9,31 @@
   </div>
   <div class="grid">
     <div class="grid_describe">
-      Player name
+      <h1> Player name </h1>
     </div>
     <div class="normal">
-      <%= @player1 %>
+      <h2> <%= @player1 %> </h2>
     </div>
     <div class="normal">
-      <%= @player2 %>
+    <h2>  <%= @player2 %></h2>
     </div>
     <div class="grid_describe">
-      HP
+    <h1>  HP </h1>
     </div>
     <div class="normal player1-hp">
-      100
+    <h2>  100</h2>
     </div>
     <div class="normal player2-hp">
-      100
+    <h2>  100</h2>
     </div>
     <div class="grid_describe">
-      Actions
+    <h1>  Actions </h1>
     </div>
-    <div class="normal"></div>
     <div class="normal">
       <form action="/attack">
-        <input type="submit" value="Attack!">
+        <input type="submit" value="Attack <%= @player2 %>" class="offensive">
       </form>
     </div>
+    <div class="normal"></div>
   </div>
 </html>
