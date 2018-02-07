@@ -17,11 +17,6 @@ h2 {
   text-align: center;
 }
 
-.goback {
-  background: #f3e5e58a;
-  padding: 1.5em;
-}
-
 p1 {
   font-size: 1.2em;
   font-family: sans-serif;
@@ -35,6 +30,6 @@ form {
 
 .gobackbutton {
   height: 3.5em;
-  width: 7em;
+  width: 15em;
   font-size: 0.8em;
 }

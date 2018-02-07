@@ -4,13 +4,10 @@
   </head>
   <body>
     <h1> <%= @player1.name %> attacked <%= @player2.name %> </h1>
-    <h2> <%= @player2.name %> has now <%= @player2.hp %> HP. </h2> <br>
-    <div class="goback">
-      <p1> Go back to battle arena </p1>
-    </div>
+    <h2> <%= @player2.name %> has now <%= @player2.hp %> HP. </h2> 
     <br>
     <form action="/battle_arena">
-      <input type="submit" value="Go back" class="gobackbutton">
+      <input type="submit" value="Go back to the battle arena" class="gobackbutton">
     </form>
   </body>
 </html>
