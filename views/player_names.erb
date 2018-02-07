@@ -3,19 +3,19 @@
     <link rel="stylesheet" type="text/css" href="/player_name.css">
   </head>
   <div class="header">
-    <%= $player1.name %>
+    <%= @player1 %>
     vs
-    <%= $player2.name %>
+    <%= @player2 %>
   </div>
   <div class="grid">
     <div class="grid_describe">
       <h1> Player name </h1>
     </div>
     <div class="normal">
-      <h2> <%= $player1.name %> </h2>
+      <h2> <%= @player1 %> </h2>
     </div>
     <div class="normal">
-    <h2>  <%= $player2.name %></h2>
+    <h2>  <%= @player2 %></h2>
     </div>
     <div class="grid_describe">
     <h1>  HP </h1>
@@ -31,7 +31,7 @@
     </div>
     <div class="normal">
       <form action="/attack">
-        <input type="submit" value="Attack <%= $player2.name %>" class="offensive">
+        <input type="submit" value="Attack <%= @player2 %>" class="offensive">
       </form>
     </div>
     <div class="normal"></div>

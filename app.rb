@@ -15,14 +15,14 @@ class Battle < Sinatra::Base
   end
 
   get '/battle_arena' do
-    #@player1 = session[:players_names][0]
-    #@player2 = session[:players_names][1]
+    @player1 = $player1.name
+    @player2 = $player2.name
     erb(:player_names)
   end
 
   get '/attack' do
-    #@player1 = session[:players_names][0]
-  #  @player2 = session[:players_names][1]
+    @player1 = $player1.name
+    @player2 = $player2.name
     erb(:attack)
   end
 
