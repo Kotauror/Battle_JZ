@@ -19,10 +19,6 @@ class Battle < Sinatra::Base
     @player2_name = $player2.name
     @player1_hp = $player1.hp
     @player2_hp = $player1.hp
-    p "******"
-    p @player2_hp
-    p @player1_hp
-    p "******"
     erb(:play)
   end
 

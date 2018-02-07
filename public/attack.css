@@ -1,0 +1,40 @@
+body {
+  background-image: url("https://images.vice.com/motherboard/content-images/article/no-id/1481668843485843.jpg?crop=1xw:0.9894837476099426xh;center,center&resize=1200");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  background: #656b8eeb;
+  font-family: sans-serif;
+  font-size: 2.7em;
+  text-align: center;
+  padding: 0.15em;
+}
+
+h2 {
+  background: #b05a36d4;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.goback {
+  background: #f3e5e58a;
+  padding: 1.5em;
+}
+
+p1 {
+  font-size: 1.2em;
+  font-family: sans-serif;
+}
+
+form {
+  background: #f3e5e58a;
+  padding: 1.5em;
+  font-family: sans-serif;
+}
+
+.gobackbutton {
+  height: 3.5em;
+  width: 7em;
+  font-size: 0.8em;
+}
