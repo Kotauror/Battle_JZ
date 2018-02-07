@@ -1,37 +1,37 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="/player_name.css">
+    <link rel="stylesheet" type="text/css" href="/play.css">
   </head>
   <div class="header">
-    <%= @player1 %>
+    <%= @player1_name %>
     vs
-    <%= @player2 %>
+    <%= @player2_name %>
   </div>
   <div class="grid">
     <div class="grid_describe">
       <h1> Player name </h1>
     </div>
     <div class="normal">
-      <h2> <%= @player1 %> </h2>
+      <h2> <%= @player1_name %> </h2>
     </div>
     <div class="normal">
-    <h2>  <%= @player2 %></h2>
+    <h2>  <%= @player2_name %></h2>
     </div>
     <div class="grid_describe">
     <h1>  HP </h1>
     </div>
     <div class="normal player1-hp">
-    <h2> <%= @player1hp %></h2>
+    <h2> <%= @player1_hp %></h2>
     </div>
     <div class="normal player2-hp">
-    <h2> <%= @player2hp %></h2>
+    <h2> <%= @player2_hp %></h2>
     </div>
     <div class="grid_describe">
     <h1>  Actions </h1>
     </div>
     <div class="normal">
       <form action="/attack">
-        <input type="submit" value="Attack <%= @player2 %>" class="offensive">
+        <input type="submit" value="Attack <%= @player2_name %>" class="offensive">
       </form>
     </div>
     <div class="normal"></div>
