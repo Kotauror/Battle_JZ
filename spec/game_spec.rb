@@ -26,11 +26,17 @@ describe Game do
     end
   end
 
-  describe "#switch" do
-    it 'changes the status of player after turn' do
-      player1.should_receive(:status=).with(true)
-      player2.should_receive(:status=).with(false)
-      game.switch(player2)
+  # describe "#switch" do
+  #   it 'changes the status of player after turn' do
+  #     player1.should_receive(:status=).with(true)
+  #     player2.should_receive(:status=).with(false)
+  #     game.switch(player2)
+  #   end
+  # end
+
+  describe '#current_turn' do
+    it 'starts as player 1' do
+      expect(game.current_turn).to eq player1
     end
   end
 end

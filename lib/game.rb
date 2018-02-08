@@ -2,10 +2,11 @@ require_relative 'player'
 
 class Game
 
-  attr_reader :players
+  attr_reader :players, :current_turn
 
   def initialize(player1, player2)
     @players = [player1, player2]
+    @current_turn = player1
   end
 
   def player_1
@@ -17,13 +18,17 @@ class Game
   end
 
   def attack(player)
-    if (@players - [player])[0].status == true then
-      player.receive_damage
-    end
+    player.receive_damage
   end
 
-  def switch(player)
-    player.status = false
-    ((@players - [player])[0]).status = true
+  def switch_turns
+    @current_turn = opponent_of(current_turn)
   end
+
+  private
+
+  def opponent_of(current_player)
+    @players.select { |player| player != current_player }.first
+  end
+
 end

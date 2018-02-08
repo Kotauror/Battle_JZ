@@ -7,6 +7,9 @@
     vs
     <%= @game.player_2.name %>
   </div>
+  <div class="turn">
+    <%= @game.current_turn.name %>'s turn
+  </div>
   <div class="grid">
     <div class="grid_describe">
       <h1> Player's name </h1>
@@ -27,19 +30,10 @@
       <h2> <%= @game.player_2.hp %></h2>
     </div>
     <div class="grid_describe">
-      <h1>  Can make action? </h1>
-    </div>
-    <div class="normal">
-      <h2> <%= @game.player_1.status %></h2>
-    </div>
-    <div class="normal">
-      <h2> <%= @game.player_2.status %></h2>
-    </div>
-    <div class="grid_describe">
       <h1>  Actions </h1>
     </div>
     <div class="normal">
-      <form action="/attack">
+      <form action="/attack?playername=<%= @game.player_2.name %>">
         <input type="submit" value="Attack <%= @game.player_2.name %>" class="offensive">
       </form>
     </div>
