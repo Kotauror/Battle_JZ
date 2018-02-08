@@ -17,6 +17,13 @@ class Game
   end
 
   def attack(player)
-    player.receive_damage
+    if (@players - [player])[0].status == true then
+      player.receive_damage
+    end
+  end
+
+  def switch(player)
+    player.status = false
+    ((@players - [player])[0]).status = true
   end
 end
