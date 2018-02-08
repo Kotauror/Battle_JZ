@@ -10,24 +10,23 @@ class Battle < Sinatra::Base
   end
 
   post '/player_names' do
-    $player1 = Player.new(params[:player1_name])
-    $player2 = Player.new(params[:player2_name])
+    player1 = Player.new(params[:player1_name])
+    player2 = Player.new(params[:player2_name])
+    $game = Game.new(player1, player2)
     redirect "/battle_arena"
   end
 
   get '/battle_arena' do
-    @player1 = $player1
-    @player2 = $player2
+    @game = $game
     erb(:play)
   end
 
   get '/attack' do
-    @player1 = $player1
-    @player2 = $player2
-    Game.new.attack(@player2)
+    @game = $game 
+    $game.attack($game.player_2)
     erb(:attack)
   end
 
-  run! if app_file == $0 # not required when we have config.ru - config.ru runs the program when we use
+  run! if app_file == $0
 
 end
