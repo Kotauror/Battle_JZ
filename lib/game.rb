@@ -25,6 +25,11 @@ class Game
     @current_turn = opponent_of(current_turn)
   end
 
+  def defending_player
+    (@players - [@current_turn])[0]
+  end
+
+
   private
 
   def opponent_of(current_player)

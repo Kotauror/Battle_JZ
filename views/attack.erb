@@ -3,8 +3,8 @@
     <link rel="stylesheet" type="text/css" href="/attack.css">
   </head>
   <body>
-    <h1> <%= @game.player_1.name %> attacked <%= @game.player_2.name %> </h1>
-    <h2> <%= @game.player_2.name %> has now <%= @game.player_2.hp %> HP. </h2>
+    <h1> <%= @game.defending_player.name %> attacked <%= @game.current_turn.name %> </h1>
+    <h2> <%= @game.current_turn.name %> has now <%= @game.current_turn.hp %> HP. </h2>
     <br>
     <form action="/battle_arena">
       <input type="submit" value="Go back to the battle arena" class="gobackbutton">
