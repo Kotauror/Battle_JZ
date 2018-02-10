@@ -29,6 +29,10 @@ class Game
     player.receive_damage
   end
 
+  def heal(player)
+    player.heal
+  end
+
   def switch_turns
     @current_turn = opponent_of(@current_turn)
   end

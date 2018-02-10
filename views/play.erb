@@ -38,6 +38,11 @@
         <input type="submit" value="Attack <%= @game.player_2.name %>" class="offensive">
       </form>
       <% end %>
+      <% if @game.player_1 == @game.current_turn %>
+      <form action="/heal">
+        <input type="submit" value="Heal self" class="def">
+      </form>
+      <% end %>
     </div>
     <div class="normal">
       <% if @game.player_2 == @game.current_turn %>
@@ -45,5 +50,22 @@
         <input type="submit" value="Attack <%= @game.player_1.name %>" class="offensive">
       </form>
       <% end %>
+      <% if @game.player_2 == @game.current_turn %>
+      <form action="/heal">
+        <input type="submit" value="Heal self" class="def">
+      </form>
+      <% end %>
     </div>
+  </div>
+
+    <div class="pictures">
+      <div class="picture">
+        <img src="https://static.pokebattler.com/pokemon/blastoise.svg">
+      </div>
+      <div class="picture">
+        <img src="https://imgur.com/aMU3B.png">
+      </div>
+    </div>
+
+
 </html>

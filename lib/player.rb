@@ -17,4 +17,8 @@ class Player
     @hp -= rand(1-15)
   end
 
+  def heal
+    @hp += rand(1-10)
+  end
+
 end

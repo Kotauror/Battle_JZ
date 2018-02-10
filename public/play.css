@@ -1,3 +1,9 @@
+html {
+  background-image: url("https://orig00.deviantart.net/ada4/f/2012/030/7/f/battle_bases_01bg_hd_by_xalien95-d4o49yb.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .header {
   text-align: center;
   font-size: 3.5em;
@@ -8,7 +14,7 @@
   text-align: center;
   font-size: 2em;
   font-family: sans-serif;
-  background-color: #e9000073;
+  background-color: #68da81bd;
   margin-top: 0.5em;
   margin-bottom: 1.5em;
 }
@@ -25,17 +31,36 @@
 
 .grid_describe {
   font-family: sans-serif;
-  background: lightgrey;
+  background: #d3d3d3b3;
 }
 
 .normal {
   font-family: sans-serif;
-  background: #dec0b6;
+  background: #976a1b6e;
 }
 
 .offensive {
   background-color: #de1616 !important;
-  margin-top: 1em;
+  margin-top: 0.5em;
+  height: 3em;
+  width: 9em;
+  font-size: 1em;
+}
+
+.offensive:hover {
+  box-shadow: 0px 0px 30px red;
+}
+
+.def {
+  background-color: #0000ff !important;
+  margin-top: 0.3em;
+  height: 3em;
+  width: 9em;
+  font-size: 1em;
+}
+
+.def:hover {
+  box-shadow: 0px 0px 30px blue;
 }
 
 h1 {
@@ -53,4 +78,15 @@ h3 {
   font-size: 2.5em;
   font-family: sans-serif;
   color: red;
+}
+
+.pictures {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.picture {
 }

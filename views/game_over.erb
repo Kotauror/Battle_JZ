@@ -1,2 +1,12 @@
-<%= @game.current_turn.name %> died.
-<%= @game.defending_player.name %> is the best pokemon master ever *mic drop*.
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/game_over.css">
+  </head>
+  <body>
+    <h1> <%= @game.current_turn.name %> lost. </h1>
+    <h2> <%= @game.defending_player.name %> is the best pokemon master ever *mic drop*. </h2>
+    <form action="/">
+      <input type="submit" value="Play again" class="gobackbutton">
+    </form>
+  </body>
+</html>

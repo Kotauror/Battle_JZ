@@ -1,0 +1,28 @@
+body {
+  background-image: url("https://cdn.weasyl.com/~filecreation/submissions/243358/cba0876507ad7dcd5f88f5b2d5f553be47033708754e6cd372632386bab0633e/filecreation-pokemon-y-joyful-nurse.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  background: #7ca8bce8;
+  font-family: sans-serif;
+  font-size: 2.7em;
+  text-align: center;
+  padding: 0.15em;
+}
+
+h2 {
+  background: #a8de9fe8;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.gobackbutton {
+  height: 3.5em;
+  width: 15em;
+  font-size: 0.8em;
+}
+
+.gobackbutton:hover {
+  box-shadow: #ab9534d1 0px 0px 35px;
+}

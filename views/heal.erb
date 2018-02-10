@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/heal.css">
+  </head>
+  <body>
+    <h1> <%= @game.defending_player.name %> has healed their HP. </h1>
+    <h2> Now their HP is <%= @game.defending_player.hp %> </h2>
+    <form action="/battle_arena">
+      <input type="submit" value="Go back to the battle arena" class="gobackbutton">
+    </form>
+  </body>
+</html>

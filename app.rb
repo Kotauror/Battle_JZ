@@ -32,6 +32,14 @@ class Battle < Sinatra::Base
     end
   end
 
+  get '/heal' do
+    @game = Game.instance
+    @game.heal(@game.current_turn)
+    @game.switch_turns
+    erb :heal
+  end
+
+
   get '/game_over' do
     @game = Game.instance
     erb :game_over
