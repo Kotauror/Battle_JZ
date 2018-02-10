@@ -14,7 +14,7 @@ class Player
   end
 
   def receive_damage
-    @hp -= rand(1-15)
+    @hp -= rand(1-20)
   end
 
   def heal
