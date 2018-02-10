@@ -33,13 +33,17 @@
       <h1>  Actions </h1>
     </div>
     <div class="normal">
+      <% if @game.player_1 == @game.current_turn %>
       <form action="/attack">
         <input type="submit" value="Attack <%= @game.player_2.name %>" class="offensive">
       </form>
+      <% end %>
     </div>
     <div class="normal">
+      <% if @game.player_2 == @game.current_turn %>
       <form action="/attack">
         <input type="submit" value="Attack <%= @game.player_1.name %>" class="offensive">
       </form>
+      <% end %>
     </div>
 </html>
