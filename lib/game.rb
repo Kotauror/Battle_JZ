@@ -29,6 +29,10 @@ class Game
     (@players - [@current_turn])[0]
   end
 
+  def game_over?
+    player_1.hp <= 0 || player_2.hp <= 0
+  end
+
 
   private
 
